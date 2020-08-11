@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Patua+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Patua+One&family=Sriracha&family=Vollkorn:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Fondamento&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Concert+One&family=Fondamento&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Carter+One&family=Concert+One&family=Fondamento&family=Merienda+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+}
+.logo{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+
+}
+#navbar{
+    /* background-color: black; */
+    padding: 13px 12px;
+    /* position: sticky; */
+    /* top: 1px; */
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#navbar::before{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+#navbar li{
+    padding: 10px 0px;
+    list-style: none;
+}
+#navbar li a{
+    margin: 15px 5px;
+    text-decoration: none;
+    padding: 13px 15px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Itim', cursive;
+    font-size: 30px; 
+}
+#navbar li a:hover{
+    background-color: rgb(183, 184, 185);
+    color: white;
+    border-radius: 15px;
+    text-decoration: underline;
+}
+
+#intro{
+    color: maroon;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 400px;
+    font-size: 100px;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Patua One', cursive;
+
+}
+.large{
+    text-decoration: underline;
+}
+ #intro::before{
+    content: ""; 
+    background: url("static/AMP1.png"); 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.45;
+} 
+#intro div.small{
+    font-size: 65px;
+    font-weight: bold;
+    color:rgb(23, 23, 124);
+    /* font-family: 'Itim', cursive; */
+    font-family: 'Vollkorn', serif;
+}
+#intro div.smallest{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 5px;
+    color: rgb(116, 52, 6);
+    font-family: 'Itim', cursive;
+}
+#cards{
+    /* background-color: rgb(247, 223, 223); */
+    height: 850px;
+    margin-top: 160px;
+    /* margin: auto; */
+}
+#cards h1{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    color: maroon;
+    font-family: 'Sriracha', cursive;
+    padding-top: 15px;
+}
+.card{
+    border: 2px solid black;
+    width: 350px;
+    background-color: rgb(243, 228, 214);
+    border-radius: 12px;
+    margin: 30px 70px;
+    height: 250px;
+    display: inline-block;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card1-img{
+    height: 70px;
+    padding: 0 10px;
+    margin: 5px 9px;
+}
+.card1-content{
+    padding: 0 15px;
+}
+.card1-content p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.card1-img img{
+    height: inherit;
+}
+.card h2{
+    text-align: center;
+    color: blue;
+    font-family: 'Sriracha', cursive;
+    padding-top: 12px;
+    font-size: 25px;   
+}
+#footer{
+    font-size: 25px;
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.help{
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-family: 'Sriracha', cursive;
+}
+#info{
+    margin-top: 130px;
+    margin-bottom: 2px;
+}
+.carstuck{
+    display: flex;
+}
+.carstuck img{
+    height: 350px;
+    width: 550px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+.matter{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    font-size: 80px;
+    margin-top: 50px;
+}
+#more{
+    background-color: rgb(230, 216, 199);
+    margin-top: 0px;
+}
+#more p{
+    font-family: 'Concert One', cursive;
+    font-size: 25px;
+    margin: 10px 180px;
+    font-weight: bold;
+}
+.p1{
+    /* font-family: 'Merienda One', cursive; */
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    margin: 10px 210px;
+}
+.tip{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+    margin: 10px 430px;
+    border: 2px solid black;
+}
+.mud{
+    font-family: 'Fondamento', cursive;
+    margin: 15px 100px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.mud1{
+    margin: 15px 150px;
+    font-size: 20px;   
+    font-family: 'Barlow Condensed', sans-serif;
+}
+#info{
+    margin-bottom: 0px;
+    background-color: rgb(203, 235, 236);
+}
+@media only screen and (max-width: 300px){
+    #intro .small .large .largest .tip{
+        display: block;
+        background-color: aqua;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    #info .small .large .largest {
+        display: block;
+        background-color: yellow;
+    }
+    .tip{
+        display: block;
+        height: 20px;
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px){
+    #more .small .large .largest .tip{
+        display: block;
+        background-color: hotpink;
+    }
+}        
+@media only screen and (min-width: 800px){
+    #box4 .small .large .largest .tip{
+        display: block;
+        background-color: rgb(36, 16, 211);
+    }
+} 

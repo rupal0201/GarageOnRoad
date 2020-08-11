@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Patua+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&family=Patua+One&family=Sriracha&family=Vollkorn:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Fondamento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Fondamento&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Concert+One&family=Fondamento&family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100;1,400&family=Carter+One&family=Concert+One&family=Fondamento&family=Merienda+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 1170px){
+    #navbar {
+        flex-direction: column;
+    }
+    
+    #navbar ul li a{
+        font-size: 1rem;
+        padding: 0px 7px;
+        padding-bottom: 8px;
+    }
+    .logo img{
+        height: 30px;
+        width: 30px;
+    }
+    .logo{
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+}
+#navbar{
+    /* background-color: black; */
+    padding: 8px 9px;
+    /* position: sticky; */
+    /* top: 1px; */
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#navbar::before{
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+#navbar li{
+    padding: 5px 0px;
+    list-style: none;
+}
+#navbar li a{
+    margin: 8px 1px;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Itim', cursive;
+    font-size: 15px; 
+}#navbar li a:hover{
+    background-color: rgb(183, 184, 185);
+    color: white;
+    border-radius: 15px;
+    text-decoration: underline;
+}
+#intro{
+    color: maroon;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3px 200px; */
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    height: 100px;
+    font-size: 27px;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Patua One', cursive;
+}
+.large{
+    text-decoration: underline;
+}
+ #intro::before{
+    content: ""; 
+    background: url("static/AMP1.png") center center/cover no-repeat;
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    z-index: -1; 
+    opacity: 0.45;
+} 
+#intro div.small{
+    font-size: 31px;
+    font-weight: bold;
+    color:rgb(23, 23, 124);
+    /* font-family: 'Itim', cursive; */
+    font-family: 'Vollkorn', serif;
+}
+#intro div.smallest{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 3px;
+    color: rgb(116, 52, 6);
+    font-family: 'Itim', cursive;
+}
+#footer{
+    font-size: 10px;
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#info{
+    margin-top: 150px;
+}
+.carstuck{
+    display: flex;
+}
+.carstuck img{
+    height: 200px;
+    width: 350px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+.matter{
+    font-family: 'Carter One', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+#more{
+    margin-top: 0px;
+    background-color: rgb(230, 216, 199);
+    margin-bottom: 0px;
+}
+#more p{
+    font-family: 'Concert One', cursive;
+    font-size: 15px;
+    margin: 10px 110px;
+    font-weight: bold;
+}
+.p1{
+    /* font-family: 'Merienda One', cursive; */
+    font-size: 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    margin: 10px 150px;
+}
+.tip{
+    font-weight: bold;
+    font-size: 10px;
+    padding: 20px;
+    margin: 10px 230px;
+    border: 2px solid black;
+}
+.mud{
+    font-family: 'Fondamento', cursive;
+    margin: 30px 70px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.mud1{
+    margin: 15px 110px;
+    font-size: 15px;   
+    font-family: 'Barlow Condensed', sans-serif;
+}}

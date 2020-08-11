@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        title 
+           | Contact-GarageOnRoad 
+        style
+            include style.css
+            include stylecontact.css
+            include contactphone.css
+    body
+        nav#navbar
+            ul
+                div.logo
+                    img(src="static/logo.jpg")
+                li #[a(href='/') Home]
+                li #[a(href='/about') About Us]
+                li #[a(href='/contact') Contact Us]
+
+                
+        div.contact
+            h2 Send us a message we would love to hear back from you! Give us a call or email us if you have any questions, comments or just plan want to talk!
+            h1 Email: #[a(href='info@GarageOnRoad.com')]info@GarageOnRoad.com
+            //- h4 Phone: 9971800751
+        form(action="/contact", method='post' class='myform')
+            input(type="text" class='myinput' name='name' placeholder='Enter your Name')
+            input(type="text" class='myinput' name='email' placeholder='Enter your Email')
+            input(type="text" class='myinput' name='subject' placeholder='Enter your Subject')
+            h3 Enter your Message
+            textarea(name="message", cols="30", rows="30" class="myinput" ) 
+            button(class='btn')
+                |Submit
+            button(class='btn1' type="reset")
+                |Reset
+
+        div.help
+                |For Immediate Roadside Assistance Call @ +91-9971800751
+        footer#footer
+            | Garage On Road     
